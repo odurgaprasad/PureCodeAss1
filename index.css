@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(231, 235, 239);
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+
+.nav-icons{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 30px auto;
+    
+}
+.icon-name{
+    height: 50px;
+    width: 150px;
+    margin-right: 300px;
+    
+}
+.icon-number{
+    color: green;
+    font-size: 20px;
+    margin-left: 300px;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px 10px;
+    max-width: 1120px;
+    width: 80%;
+
+}
+
+.form-container{
+    width: 100%;
+    border-radius: 1px solid rgb(228, 213, 213);
+    background-color: aliceblue;
+    padding: 100px;
+    box-shadow: inset 6px 6px 10px 10px rgba(67, 63, 63, 0.2) ;
+}
+.center1{
+    display: flex;
+    justify-content: center;
+}
+
+.container .form-container .heading{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.description{
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.container .form-container .text{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.container .form-container .two{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.container .form-container .companyname{
+    width: 100%;
+    padding: 20px;
+}
+.container .form-container .mail{
+    width: 100%;
+    padding: 20px;
+}
+.container .form-container span{
+    text-decoration: underline;
+}
+.container .form-container .check{
+    padding-bottom: 10px;
+    margin: 10px;
+}
+.button{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(151, 225, 131);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+.details{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(219, 225, 230,0.3);
+    margin-top: 30px;
+}
+
+.paragraph{
+    font-size: 17px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+}
+
+.last-heading{
+    border: 1px solid black ;
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 70%;
+    text-align: center;
+    margin-left: 50px;
+}
+.last-name{
+    background-color: lightgreen;
+    color: black;
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.description-container{
+    background-color: rgb(15, 39, 105);
+    height: 50%;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    margin-top: 150px;
+    padding: 30px;
+}
+.description-container p{
+    font-size: 20px;
+    color: white;
+}
+ul{
+    color: white;
+    padding: 10px;
+}
+ul li{
+    list-style-type: none;
+    font-size: 15px;
+    padding: 5px;
+}
+
+
+
+@media (max-width: 991px) {
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        width: 80%;
+    }
+
+    .form-container {
+        width: 100%;
+        background-color: aliceblue;
+        padding: 20px;
+    }
+
+    .description-container {
+        height: 100%;
+        margin-top: 100px;
+        padding: 20px;
+    }
+    .icon-name{
+        
+        margin-right: 200px;
+    
+    
+    }
+    .icon-number{
+        color: green;
+        font-size: 15px;
+        margin-left: 100px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+
+    }
+
+    .form-container {
+        width: 100%;
+        background-color: aliceblue;
+        padding: 20px; 
+    }
+
+    .description-container {
+        height: 100%;
+        margin-top: 100px;
+        padding: 10px; 
+    }
+    .nav-icons {
+        display: flex;
+        justify-content: space-between;
+        margin: 8px; 
+    }
+    .nav-icons .icon-name {
+        
+        margin-right: 100px; 
+    }
+    .nav-icons .icon-number {
+        color: green;
+        font-size: 15px;
+        margin-left: 100px; 
+    }
+    .container .form-container .text{
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+        width: 100%;
+    }
+    .container .form-container .two{
+        display:block;
+
+    }
+
+
+}
